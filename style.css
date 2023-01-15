@@ -164,8 +164,8 @@ a.active,a:hover{
 }
 
 .skill{
-  width: 586px;
-  height: 171px;
+  width: 36.625rem;
+  height: 10.5rem;
   background: #FFFFFF;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
@@ -251,6 +251,64 @@ footer{
 }
  
 /* media Query--------- */
+@media only screen and (max-width:576px) {
+  /* banner section  */
+  .banner_info h1{
+    font-size: 3rem;
+  }
+  .banner_img img{
+    width: 100%; 
+  }
+
+  /* features section */
+  .features{
+    flex-direction: column;       
+  }
+  .features_info{
+    margin-top: 2rem;
+  }
+
+  /* experience section  */
+  .experience{
+    padding: 2rem;
+  }
+  .experience_container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .skill{
+    width: 30.625rem;
+    height: 12rem;
+  }
+   
+  /* fact section ------ */
+
+  .facts_info{
+    padding: 0; 
+    text-align: center;
+ }
+ .facts_boxs{
+   padding: 2rem;
+   display: grid;
+
+   grid-template-columns: repeat(1,1fr);
+    
+    
+ }
+  .sponsors_box{
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: repeat(3,1fr); 
+}
+.sponsors_box img{
+  padding: 20px;
+  width: 100%;
+}
+ /* footer section  */
+ .footer_container{
+  width: 100%;
+ }
+}
 
 @media (max-width:858px) {
   .checkbtn{
